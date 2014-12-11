@@ -1,0 +1,17 @@
+#main-panel {
+    margin-top: 155px;
+    opacity: .97;
+}
+
+.buttons .btn {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0px 0px 0px 0px !important;
+    }
+}
+

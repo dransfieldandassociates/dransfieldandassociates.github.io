@@ -3,26 +3,68 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" href="/css/site.css">
-	<script src="/js/site.js"></script>
-	<title>My Blog</title>
+    {% include head-content.html %}
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/paralax.css" />
+    <title>Dransfield and Associates</title>
 </head>
+
 <body>
-	<header>
-		{% include header.html %}
-	</header>
-	<div class="container">
-		{% for post in site.posts %}
-			<article>
-				<h1><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
-				<p>{{ post.date | date_to_string }}</p>
-				<p>{{ post.content }}</p>
-			</article>
-		{% endfor %}
-	</div>
-	<footer>
-		{% include footer.html %}
-	</footer>
+    <header>
+        {% include nav-bar.html %} {% include header.html %}
+    </header>
+
+    <section class="module parallax parallax-1">
+        <div class="container">
+            <div class="panel panel-default" id="main-panel">
+                <div class="panel-body">
+                    <div class="col-sm-6 description">
+                        Something here 
+                    </div>
+                    <div class="col-sm-6 buttons">
+                        <button type="button" class="btn btn-success">
+                            Services
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            Tax Free Retirement
+                          </button>
+                          <button type="button" class="btn btn-warning">
+                            Services
+                          </button>
+                          <button type="button" class="btn btn-info">
+                            Services
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="module content">
+        <div class="container">
+        </div>
+    </section>
+
+    <section class="module parallax parallax-2">
+        <div class="container">
+            <h1>Plan Your Future</h1>
+        </div>
+    </section>
+
+    <section class="module content">
+        <div class="container">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        {% include footer.html %}
+    </footer>
 </body>
+
 </html>
