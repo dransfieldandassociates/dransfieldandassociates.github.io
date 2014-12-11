@@ -9,9 +9,30 @@
     font-size: 18px;
 }
 
+.thumbnail {
+    margin-top: 30px;
+}
+
 @media (min-width: 768px) {
     .navbar {
         border-radius: 0px 0px 0px 0px !important;
     }
 }
 
+
+.thumbnail {
+    
+}
+
+.thumbnail img {
+    margin: 0px !important;
+}
+
+.icon-panel {
+    margin-top: 30px;
+    height: 320px;
+}
+
+#bottom-pane {
+    height: 190px;
+}

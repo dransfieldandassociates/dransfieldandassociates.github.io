@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/paralax.css" />
     <title>Dransfield and Associates</title>
@@ -66,21 +67,21 @@
             <div class="panel panel-default" id="main-panel">
                 <div class="panel-body">
                     <div class="col-sm-6 description">
-                        Something here 
+                        Something here
                     </div>
                     <div class="col-sm-6 buttons">
-                        <button type="button" class="btn btn-success">
+                        <button type="button" id="service-button" class="btn btn-success">
                             Services
-                          </button>
-                          <button type="button" class="btn btn-primary">
+                        </button>
+                        <button type="button" class="btn btn-primary">
                             Tax Free Retirement
-                          </button>
-                          <button type="button" class="btn btn-warning">
+                        </button>
+                        <button type="button" class="btn btn-warning">
                             Services
-                          </button>
-                          <button type="button" class="btn btn-info">
+                        </button>
+                        <button type="button" class="btn btn-info">
                             Services
-                          </button>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -98,16 +99,98 @@
         </div>
     </section>
 
-    <section class="module content">
+    <section class="module content" id="service-pane">
         <div class="container">
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <h2>It Is Never Too Late</h2>
+            <p>Many people put it off because it seems like such a daunting task... but when financial planning is done right, it can be exciting and empowering. With the help of a skilled advisor who listens to your specific needs, you can direct your own destiny.</p>
+            <p>
+                We will help you protect your home, your assets and your legacy. Take a look at the products and services our firm provides and call us for a free, no-obligation consultation today!
+            </p>
+
         </div>
     </section>
 
-    
+    <section class="module parallax parallax-3">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-md-6">
+                    <div class="panel panel-default icon-panel" >
+                        <div class="panel-body">
+                            <section class="pull-right">
+                                <h2>Retirement & Insurance Services</h2>
+                                <p>
+                                    Retirement Planning What is your current retirement account balance? Will your current retirement assets and annual contribution amounts be sufficient to obtain your goals?
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-default icon-panel" >
+                        <div class="panel-body">
+                            <section class="pull-right">
+                                <h2>Tax Planning & Preparation</h2>
+                                <p>
+                                    We know one of your top priorities is paying less in taxes. This is best achieved through comprehensive tax planning. 
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-default icon-panel" >
+                        <div class="panel-body">
+                            <section class="pull-right">
+                                <h2>Estate & Inheritance Planning</h2>
+                                <p>
+                                    Our goal is to help clients protect their assets, manage their family wealth, and ultimately achieve their wealth-transfer goals.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-default icon-panel" >
+                        <div class="panel-body">
+                            <section class="pull-right">
+                                <h2>Social Security Income Planning</h2>
+                                <p>
+                                    At what age should you start collecting your Social Security benefits?  The law allows you to begin collecting at your 62nd birthday, though you'll get a larger amount per month if you wait.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="panel panel-default icon-panel" id="bottom-pane">
+                        <div class="panel-body">
+                            <section class="pull-right">
+                                <h2>Tax Free Retirement</h2>
+                                
+                                <p>Grow your money with zero market risk
+Access your retirement dollars tax-free
+Leave an income-tax-free inheritance to your heirs
+And much, much more</p> 
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <footer>
+        <script type="text/javascript">
+            $('#service-button').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('#service-pane').offset().top
+                }, 1000);
+            });
+        </script>
         
     </footer>
 </body>
