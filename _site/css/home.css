@@ -13,21 +13,28 @@
     margin-top: 30px;
 }
 
+.icon-panel {
+    height: 330px;
+    margin-top: 30px;
+}
+
+#bottom-card {
+    height: 190px;
+}
+
+.panel-thumb {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.icon-panel h2 {
+    margin-top: -8px;
+}
+
 @media (min-width: 768px) {
     .navbar {
         border-radius: 0px 0px 0px 0px !important;
     }
 }
 
-
-.icon-panel {
-    height: 320px;
-}
-
-.panel-container {
-    margin-top: 30px;
-}
-
-#bottom-card {
-    height: 192px;
-}
