@@ -20,19 +20,14 @@
 }
 
 
-.thumbnail {
-    
-}
-
-.thumbnail img {
-    margin: 0px !important;
-}
-
 .icon-panel {
-    margin-top: 30px;
     height: 320px;
 }
 
-#bottom-pane {
-    height: 190px;
+.panel-container {
+    margin-top: 30px;
+}
+
+#bottom-card {
+    height: 192px;
 }
